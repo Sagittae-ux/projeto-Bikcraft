@@ -127,3 +127,35 @@ h1 span {
 .botao-alt:hover {
   background-color: var(--cor-10);
 }
+
+.botao-seta {
+  background: linear-gradient(rgb(255, 221, 26) 0%, rgba(255, 181, 0, 1) 100%);
+  text-transform: uppercase;
+  padding: 16px 32px;
+  font: Poppins;
+  font-weight: bold;
+  color: #854e06;
+  border-radius: 4px;
+  max-width: max-content;
+  grid-column: 2;
+  place-self: end;
+  align-items: center;
+}
+
+.botao-seta:hover {
+  background: linear-gradient(rgb(255, 218, 10) 0%, rgb(218, 156, 0) 100%);
+}
+
+.botao-seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
+.botao-seta:hover::after {
+  transform: translateX(5px);
+}
